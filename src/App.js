@@ -19,16 +19,19 @@ export function App() {
   }
 
   const update = (title) => {
-    let str = title.split('').splice(0, 4).join('') + '...';
+    let str = title.split('').splice(0, 15).join('') + '...';
     setSearch(str);
     setDisplay(false);
   }
 
   return (
     <div className="App" ref={appRef}>
+      <h1>Autocomplete</h1>
+
       <input
-        placeholder="Type to search"
+        type='search'
         value={search}
+        placeholder="Type to search"
         onChange={e => setSearch(e.target.value)}
         onClick={() => setDisplay(true)}
       />

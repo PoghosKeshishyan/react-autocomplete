@@ -1,19 +1,32 @@
-*{
-    padding: 0; margin: 0; 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.App{
+.App {
     width: 500px;
     margin: 100px auto;
 }
 
-.Container{
+h1 {
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.Container {
     max-height: 400px;
     overflow-y: scroll;
 }
 
-.item{
+.item {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.item:hover {
+    background: #e2e8f0;
 }
